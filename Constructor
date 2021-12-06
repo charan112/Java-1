@@ -1,0 +1,25 @@
+class Cons
+{
+double width,height,depth;
+Cons()
+{
+System.out.println("Constructor");
+width=10;
+height=10;
+depth=10;
+}
+double volume()
+{
+return width*height*height;
+}}
+class Constructor
+{
+public static void main(String[] args)
+{
+double vol;
+Cons c1=new Cons();
+vol=c1.volume();
+System.out.println("Volume is"+vol);
+}
+}
+
