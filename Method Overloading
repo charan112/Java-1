@@ -1,0 +1,32 @@
+class Overload
+{
+void test()
+{
+System.out.println("No parameters");
+}
+void test(int a)
+{
+System.out.println("One Integer Parametr");
+System.out.println("a: "+a);
+}
+void test(int a,int b)
+{
+System.out.println("Two Integer Paramerter");
+System.out.println("a and b :"+a+""+b);
+}
+void test(double a)
+{
+System.out.println("One Double Parameter");
+System.out.println("");
+}
+class MethodOverload
+{
+public static void main(String[] args)
+{
+Overload mo=new Overload();
+mo.test();
+mo.test(10);
+mo.test(10,20);
+mo.test(123.35);
+}
+}
