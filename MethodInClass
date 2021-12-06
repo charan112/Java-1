@@ -1,0 +1,14 @@
+public class MethodInClass
+{
+int id=45;
+String name="Likhith";
+public static void main(String[] args)
+{
+MethodInClass.m1=new MethodInClass();
+System.out.println(m1.id);
+System.out.println(m1.name);
+}
+}
+
+
+
