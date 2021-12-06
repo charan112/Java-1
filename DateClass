@@ -1,0 +1,10 @@
+class DateClass
+{
+public static void main(String[] args)
+{
+DateClass date=new DateClass();
+System.out.println(date);
+long millis=System.currentTimeMillis();
+System.out.println(millis);
+}
+}
