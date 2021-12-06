@@ -1,0 +1,20 @@
+class CreateMethod
+{
+int a=10;
+int b=20;
+void method1()
+{
+System.out.println(a);
+}
+void method2()
+{
+System.out.println(b);
+}
+public static void main(String[] args)
+{
+CreateMethod m1=new CreateMethod();
+m1.method1();
+CreateMethod m2=new CreateMethod();
+m2.method2();
+}
+}
