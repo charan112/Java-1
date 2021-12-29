@@ -1,0 +1,26 @@
+import java.util.*;
+class Outer  //outer class
+{
+	Scanner sc=new Scanner(System.in);
+	String outer_x=sc.nextLine();
+	class Inner      //inner class
+	{
+		void display()
+		{
+			System.out.println("Variable in Outer class outer_x : "+outer_x);
+		}
+	}
+	void test()
+	{
+		Inner i=new Inner();
+		i.display();
+	}
+}
+class Week3-1
+{
+	public static void main(String args[])
+	{
+		Outer o=new Outer();
+		o.test();
+	}
+}
