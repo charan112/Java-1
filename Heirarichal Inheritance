@@ -1,0 +1,45 @@
+class one
+{
+void print1()
+{
+System.out.println("This is One Class method");
+}
+}
+class two extends one
+{
+void print2()
+{
+System.out.println("This is Two Class method");
+}
+}
+class three extends one
+{
+void print3()
+{
+System.out.println("This is Three Class method");
+}
+}
+class four extends one
+{
+void print4()
+{
+System.out.println("This is four Class method");
+}
+}
+class HeirarichalInheritance
+{
+public static void main(String[] args)
+{
+one o = new one();
+o.print1();
+two t = new two();
+t.print1();
+t.print2();
+three th = new three();
+th.print1();
+th.print3();
+four f = new four();
+f.print1();
+f.print4();
+}
+} 
