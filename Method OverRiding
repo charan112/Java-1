@@ -1,0 +1,81 @@
+class base
+{ 
+void show() 
+{ 
+System.out.println("This is Base Class Method");
+} 
+}
+class derived extends base 
+{ 
+void show() 
+{ 
+System.out.println("This is Derived Class Method"); 
+} 
+} 
+class Override 
+{ 
+public static void main(String args[]) 
+{ 
+derived obj = new derived(); 
+obj.show(); 
+} 
+}
+Output:
+This is Base Class Method
+This is Derived Class Method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example 2:
+class A 
+{ 
+int i, j; 
+A(int a, int b) 
+{ 
+i = a; 
+j = b; 
+} 
+// display i and j 
+void show() 
+{ 
+System.out.println("This is Base Class Method");
+System.out.println("i and j: " + i + " " + j); 
+} 
+}
+class B extends A 
+{ 
+int k; 
+B(int a, int b, int c) 
+{ 
+super(a, b); 
+k = c; 
+} //display k – this overrides show() in A 
+void show() 
+{ 
+System.out.println("This is Derived Class Method"); 
+System.out.println("k: " + k); 
+} 
+} 
+class MethodOverRide
+{ 
+public static void main(String args[]) 
+{ 
+B obj = new B(1, 2, 3); 
+obj.show(); // this calls show() in B 
+} 
+} 
