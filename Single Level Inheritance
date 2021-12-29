@@ -1,0 +1,27 @@
+class one
+{
+void print1()
+{
+System.out.println("This is Base Class method");
+}
+}
+class two extends one
+{
+void print2()
+{
+System.out.println("This is Derived Class method");
+}
+}
+class SingleInheritance
+{
+public static void main(String[] args)
+{
+
+
+one o = new one();
+o.print1();
+two t = new two();
+t.print1();
+t.print2();
+}
+}
